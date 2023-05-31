@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Encriptador de Texto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Encriptador de Texto</h2>
+  <label for="input">Texto:</label>
+  <textarea id="input" rows="4" cols="50"></textarea>
+  <br>
+  <input type="radio" id="encrypt" name="mode" value="encrypt" checked>
+  <label for="encrypt">Encriptar</label>
+  <input type="radio" id="decrypt" name="mode" value="decrypt">
+  <label for="decrypt">Desencriptar</label>
+  <br>
+  <button onclick="processText()">Procesar</button>
+  <br>
+  <label for="output">Resultado:</label>
+  <textarea id="output" rows="4" cols="50"></textarea>
+  <br>
+  <button onclick="copyText()">Copiar</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
